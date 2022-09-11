@@ -3,9 +3,8 @@ package ru.netology.test;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
-class GetTestV1 {
+public class PostTestV1 {
     @Test
     void shouldPost() {
         // Given - When - Then
@@ -19,7 +18,7 @@ class GetTestV1 {
         // Проверки
                 .then()
                 .statusCode(200)
-             //   .body(/* --> ваша проверка здесь <-- */)
+        //        .body(/* --> ваша проверка здесь <-- */)
         ;
     }
 }
